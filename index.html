@@ -42,13 +42,13 @@
 				<img style="margin: 0; padding: 0 3rem;" src="./img/logo2.png" />
 			</div>
 			<div style="align-self: center">
-				<a onclick="mouse('#evento')" class="menu-main--item">A empresa</a>
+				<a onclick="mouse('#empresa')" class="menu-main--item">A empresa</a>
 			</div>
 			<div style="align-self: center">
-				<a onclick="mouse('#mouse');" class="menu-main--item">Serviços</a>
+				<a onclick="mouse('#servicos');" class="menu-main--item">Serviços</a>
 			</div>
 			<div style="align-self: center">
-				<a onclick="toogleModal();" class="menu-main--item">Contato</a>
+				<a onclick="mouse('#contato');" class="menu-main--item">Contato</a>
 			</div>
 		</header>
 
@@ -63,7 +63,7 @@
 	<section class="workers row">
 		<div class="hide-for-small-only workers-img collumns small-12 medium-6">
 		</div>
-		<div class="workers-text-section collumns small-12 medium-6">
+		<div id="empresa" class="workers-text-section collumns small-12 medium-6">
 			<div style="max-width: 600px; margin: 0 auto;">
 				<h2 class="title-section">FUNDAÇÃO</h2>
 
@@ -96,7 +96,7 @@
 
 	<section class="basic-section">
 		<div class="row">
-			<div class="columns small-12">
+			<div class="columns small-12" id="servicos">
 				<h2 style="display: inline-block; margin-right: 1rem;" class="title-section">SERVIÇOS</h2>
 				<p style="display: inline-block; width: 300px; margin: 0;" class="headline-parahraph">Montagem, reforma, manutenção e substituição de peças desgastadas em</p>
 
@@ -192,7 +192,7 @@
 
 	<section class="colorful-section">
 		<div class="row">
-			<h3 style="padding-left: 2rem" class="collumns small-12 title-section colorful-section-title">CONTATO</h3>
+			<h3 id="contato" style="padding-left: 2rem" class="collumns small-12 title-section colorful-section-title">CONTATO</h3>
 
 			<div class="columns small-12 medium-6 large-5">
 				<div class="row">
