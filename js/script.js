@@ -65,16 +65,19 @@ toogleModalContato = function() {
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    nav:false,
+    nav:true,
+    dots: false,
     animateOut: 'fadeOut',
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:3000,
     autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
         }
-    }
+    },
+    navText: ["<i style='color: white; margin: 0 0.5rem; padding: 5px; font-size: 22px;' class='fa fa-arrow-left'></i>","<i style='color: white; margin: 0 0.5rem; padding: 5px; font-size: 22px;' class='fa fa-arrow-right'></i>"],
+
 });
 
 toggleMenu = function() {

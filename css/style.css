@@ -219,6 +219,18 @@ body, span, p {
 }
 
 
+.list-services {
+	font-size: 18px;
+
+}
+
+.list-services li {
+	margin: 0.5rem 0;
+}
+
+
+
+
 
 .full-calendar-box {
 	background-color: #404142;
@@ -270,7 +282,7 @@ body, span, p {
     background-repeat: no-repeat;
     background-size: cover;
 	position: relative;
-	background-image: url(../img/bg.jpeg);
+	background-image: url(../img/bg.jpg);
 }
 
 .stunning-first-section:before {
@@ -353,7 +365,13 @@ body, span, p {
 
 
 
-
+.owl-nav {
+	position: absolute;
+    top: 87%;
+    display: block;
+    right: 0;
+    left: 0;
+}
 
 
 
@@ -361,7 +379,7 @@ body, span, p {
 
 
 .item {
-	height: 100vh;
+	height: 500px;
 }
 
 .news-item {
