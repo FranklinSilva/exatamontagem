@@ -32,7 +32,14 @@ sendMessage = function () {
 
 toogleModalContato = function() {
     var el = document.querySelector('.simple-modal-contato');
+    console.log(el)
     el.classList.toggle('displayNone');
+};
+
+toogleModalWork = function() {
+    var bel = document.querySelector('.simple-modal-work');
+    console.log(bel)
+    bel.classList.toggle('displayNone');
 };
 
 

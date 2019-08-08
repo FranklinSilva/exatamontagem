@@ -467,6 +467,15 @@ body, span, p {
     right: 0;
 }
 
+
+@media screen and (min-width: 40em){
+	.copyright {
+		margin-left: 12px !important;
+		text-align: left !important;
+	}
+
+}
+
 .transparent-button {
 	background-color:  rgb(177, 15, 31);
 	color: #fafafa;

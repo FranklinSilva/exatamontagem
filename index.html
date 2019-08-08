@@ -33,6 +33,7 @@
 		emailjs.init("user_MGhDn6Qm2SqkYeSIbmLxk");
 	})();
 	</script>
+
 </head>
 <body>
 	<section  class="stunning-first-section">
@@ -106,20 +107,20 @@
 		<div style="margin-top: 1rem" class="row">
 			<div class="columns small-12 medium-6">
 				<ul class="list-services">
-					<li>Alimentadores de placas;</li>
-					<li>Alimentadores de correias;</li>
+					<li>Alimentadores de Placas;</li>
+					<li>Alimentadores de Correias;</li>
 					<li>Britadores;</li>
-					<li>Perneiras vibratórias;</li>
+					<li>Peneiras Vibratórias;</li>
 					<li>Tambores de lavagem;</li>
 					<li>Lavadores;</li>
-					<li>Moinhos de barros;</li>
-					<li>Moinhos de bolas;</li>
-					<li>Correias transportadoras; </li>
+					<li>Moinhos de Barras;</li>
+					<li>Moinhos de Bolas;</li>
+					<li>Correias Transportadoras; </li>
 					<li>Espessadores;</li>
-					<li>Bombas em geral;</li>
-					<li>Silos de alimentação; </li>
-					<li>Tak´s separadores hidráulicos;</li>
-					<li>Distribuidores. </li>
+					<li>Bombas em Geral;</li>
+					<li>Silos de Alimentação; </li>
+					<li>Tak's Separadores Hidráulicos;</li>
+					<li>Distribuidores; </li>
 				</ul>
 			</div>
 			<div class="columns small-12 medium-6">
@@ -292,8 +293,15 @@
 	</section>
 
 	<div class="footer">
-		<div class="row">
-			<p>Exata Manutenção e Montagem 2019 - All rights Reserved</p>
+		<div style="align-items: baseline" class="row">
+			<div class="columns small-12 medium-8">
+				<p class="copyright">Exata Manutenção e Montagem 2019 - All rights Reserved</p>
+			</div>
+			<div class="columns small-12 medium-4">
+				<div style="padding: 0.2rem" class="middle-button primary-button pointer-object" onclick="toogleModalWork()">
+					Trabalhe Conosco
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -305,7 +313,7 @@
 		
 				<h3 class="title-section">SOLICITAÇÃO DE CONTATO</h3>
 
-					<div class="row visitas--content-modal">
+				<div class="row visitas--content-modal">
 						
 					<label for="name">Nome Completo:</label>
 					<input type="text" name="name" class="contact-name" id="name" placeholder="João da Silva">
@@ -319,17 +327,66 @@
 					<label for="email">Nos fale um pouco sobre o por quê do seu contato:</label>
 					<textarea style="height: 10rem"  class="contact-message" ></textarea>
 
-				<span class="hotels-section--title">Não hesite também em nos contactar via e-mail contato@exatamanutencao.com.br</span>
+					<span class="hotels-section--title">Não hesite também em nos contactar via e-mail contato@exatamanutencao.com.br</span>
 
-				<div style="width: 100%" class="row">
-					<div class="columns small-6">
-						<div style="background-color: rgb(177, 15, 31)" onclick="toogleModalContato();" class="full-calendar-box simple-modal__spacing pointer-object">					
-							<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+					<div style="width: 100%" class="row">
+						<div class="columns small-6">
+							<div style="background-color: #244E91" onclick="toogleModalContato();" class="full-calendar-box simple-modal__spacing pointer-object">					
+								<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
+							</div>
+						</div>
+						<div class="columns small-6">
+							<div onclick="sendMessage()" class="full-calendar-box simple-modal__spacing pointer-object">					
+								<span><i class="animated fas fa-paper-plane"></i>  Enviar</span>
+							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="simple-modal simple-modal-work displayNone">
+		<div class="simple-modal--dialog simple-modal--dialog--full-width fadeInDown animated">
+			<div class="simple-modal--dialog--body">
+		
+
+				<div style="justify-content: center;" class="row">
+					<div class="columns small-12">
+							<h3 class="title-section">Venha para a Exata!</h3>
+					</div>
+					<div class="columns small-12">
+						<p>
+							Aqui você constrói o que importa - seja sua carreira, 
+							habilidades cruciais de trabalho, relacionamentos fortes ou novas tecnologias digitais. 
+							Há grandes trabalhos a serem feitos em todo o mundo - construir infraestrutura crítica, 
+							fortalecer as economias locais, atender à demanda por energia - e esse trabalho é impulsionado por nosso pessoal.
+						</p>
+					</div>
+					<div class="columns small-12 medium-6">
+						<p style="margin: 0 0 1rem 0">
+							Todos os funcionários da Exata levam nossa empresa adiante. 
+							Peça por peça, parte por parte, pessoa por pessoa. Junte-se à nossa equipe vencedora e ajude a construir um mundo melhor.
+						</p>
+					</div>
+					<div class="columns small-12 medium-6">
+						<img src="./img/worker.jpg" />
+					</div>
+					<div class="columns small-12 medium-8">
+						<span style="margin: 2rem 0" class="hotels-section--title">
+							Temos sempre vagas para soldador, maquineiro, etc etc. Envie seu curriculum para nossa base através do 
+							<span style="border-bottom: 2px solid #699CD2"> vagas@exatamanutencao.com.br </span> 
+						</span>
+					</div>
+				</div>
+
+
+
+				<div style="width: 100%; justify-content: center;" class="row">
 					<div class="columns small-6">
-						<div onclick="sendMessage()" class="full-calendar-box simple-modal__spacing pointer-object">					
-							<span><i class="animated fas fa-paper-plane"></i>  Enviar</span>
+						<div style="background-color: #244E91" onclick="toogleModalWork();" class="full-calendar-box simple-modal__spacing pointer-object">					
+							<span><i class="animated fas fa-times-circle"></i>  Fechar</span>
 						</div>
 					</div>
 				</div>
@@ -344,5 +401,4 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/modalPalestrantes.js"></script>
 </html>
